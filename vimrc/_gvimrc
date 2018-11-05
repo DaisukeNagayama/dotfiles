@@ -10,26 +10,21 @@ set columns=80
 "---------------------------------------------------
 " 色テーマ
 "---------------------------------------------------
-"" ハイライトを有効にする
-" （on: デフォルト設定を使用する, enable: 有効にするだけ）
-syntax enable
-set t_Co=256
-
 " カラースキーマ
 " .vim/colors にダウンロードして使用
 " gvimの色テーマは.gvimrcで指定する
 colorscheme tender
-"colorscheme koehler
 "set background=dark
 
 " 見辛い箇所の色を変更する
-highlight Comment guifg=102
-highlight Visual guibg=91
-"highlight LineNr guifg=55
-"highlight CursorLineNr guifg=124
+" 灰, 菖蒲色(#8e00cc,#674196), 暗灰, 美玲色(#ac1a7f)
+highlight Comment guifg=#777777
+highlight Visual guibg=#674196
+highlight LineNr guifg=#555555
+highlight CursorLineNr guifg=#ac1a7f
 
 " 全角スペースの hilight だけ目立つ色に変更する
-hi DoubleByteSpace term=underline ctermbg=red guibg=red:w
+hi DoubleByteSpace term=underline guibg=#ff0000
 
 match DoubleByteSpace /　/
 
