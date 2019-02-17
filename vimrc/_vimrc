@@ -117,7 +117,8 @@ set wrap
 " （タブが「▸-」, 半角スペースが「~」と表示される）
 set list
 set listchars=tab:\▸\-,trail:~,extends:»,precedes:«
-
+" 自動改行を無しにする
+autocmd FileType text setlocal textwidth=0
 
 "----------------------------------------
 " Tab, インデント
